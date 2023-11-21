@@ -2,15 +2,14 @@
 
 Online material for "Understanding interactions in a complex world: Design and analysis of multi-species functional response experiments"
 
-Ready-to-use R-code available
-
 ## Tutorial
 
-test [html](https://benjamin-rosenbaum.github.io/multispecies_functional_responses/Tutorial.html) [pdf](https://benjamin-rosenbaum.github.io/multispecies_functional_responses/Tutorial.pdf) [R](https://benjamin-rosenbaum.github.io/multispecies_functional_responses/Tutorial.R)
+Detailed tutorial: [html](https://benjamin-rosenbaum.github.io/multispecies_functional_responses/Tutorial.html) [pdf](https://benjamin-rosenbaum.github.io/multispecies_functional_responses/Tutorial.pdf) 
+Standalone R-code 'Tutorial.R' and additional functions available in 'code' folder.
 
 ## Empirical datasets
 
-Results of fitting empirical datasets as html files
+Results of fitting 23 empirical datasets in html files
 
 - [Colton_1987_1](https://benjamin-rosenbaum.github.io/multispecies_functional_responses/Colton_1.html)
 - [Colton_1987_2](https://benjamin-rosenbaum.github.io/multispecies_functional_responses/Colton_2.html)
