@@ -1,10 +1,12 @@
 # Fitting multi-species functional responses
 
-To do: link pdfs / htmls here for direct display
+Online material for "Understanding interactions in a complex world: Design and analysis of multi-species functional response experiments"
+
+Ready-to-use R-code available
 
 ## Tutorial
 
-R-code and Tutorial [html](https://benjamin-rosenbaum.github.io/multispecies_functional_responses/Tutorial.html)
+test [html](https://benjamin-rosenbaum.github.io/multispecies_functional_responses/Tutorial.html) [pdf](https://benjamin-rosenbaum.github.io/multispecies_functional_responses/Tutorial.pdf) [R](https://benjamin-rosenbaum.github.io/multispecies_functional_responses/Tutorial.R)
 
 ## Empirical datasets
 
