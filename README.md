@@ -5,6 +5,7 @@ Online material for "Understanding interactions in a complex world: Design and a
 ## Tutorial
 
 Detailed tutorial: [html](https://benjamin-rosenbaum.github.io/multispecies_functional_responses/Tutorial.html) [pdf](https://benjamin-rosenbaum.github.io/multispecies_functional_responses/Tutorial.pdf) 
+
 Standalone R-code 'Tutorial.R' and additional functions available in 'code' folder.
 
 ## Empirical datasets
