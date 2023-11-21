@@ -11,13 +11,13 @@ library("BayesianTools") # plotting model output
 library("deSolve")       # computing ODE predictions
 
 # compile models
-# source("compilation_loo_mixed.R")
+source("compilation_loo_mixed.R")
 
 # or load already compiled models
-load("stan_model_H2_mixed.RData")
-load("stan_model_H3_mixed.RData")
-load("stan_model_Yo_mixed.RData")
-load("stan_model_New_mixed.RData")
+# load("stan_model_H2_mixed.RData")
+# load("stan_model_H3_mixed.RData")
+# load("stan_model_Yo_mixed.RData")
+# load("stan_model_New_mixed.RData")
 
 ## Data simulation -------------------------------------------------------------
 
