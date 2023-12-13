@@ -11,13 +11,13 @@ library("BayesianTools") # plotting model output
 library("deSolve")       # computing ODE predictions
 
 # compile models
-source("compilation_loo_mixed.R")
+# source("compilation_loo_mixed.R")
 
 # or load already compiled models
-# load("stan_model_H2_mixed.RData")
-# load("stan_model_H3_mixed.RData")
-# load("stan_model_Yo_mixed.RData")
-# load("stan_model_New_mixed.RData")
+load("stan_model_H2_mixed.RData")
+load("stan_model_H3_mixed.RData")
+load("stan_model_Yo_mixed.RData")
+load("stan_model_Gen_mixed.RData")
 
 ## Data simulation -------------------------------------------------------------
 
@@ -186,7 +186,7 @@ fit3 = sampling(
 
 print(fit3, pars=c("a","h","w","r"), digits=3, probs=c(0.05, 0.5, 0.95))
 
-### Fit New FR -----------------------------------------------------------------
+### Fit Generalized switching FR -----------------------------------------------
 
 init = rep(list(list(a = c(0.1,0.1),
                      h = c(1/50,1/50),
@@ -196,7 +196,7 @@ init = rep(list(list(a = c(0.1,0.1),
 ),chains)
 
 fit4 = sampling(
-  model.New,
+  model.Gen,
   data = data.stan,
   chains = chains,
   warmup = 1000,

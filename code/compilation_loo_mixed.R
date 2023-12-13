@@ -1,3 +1,4 @@
+rm(list=ls())
 library("rstan")
 
 # Holling 2 --------------------------------------------------------------------
@@ -404,9 +405,9 @@ remove(model.Yo)
 print("Yodzis OK")
 
 
-# New --------------------------------------------------------------------------
+# Generalized switching --------------------------------------------------------
 
-code.New = "
+code.Gen = "
 functions {
   real[] MSFRm(real t, real[] y, real[] theta, real[] x_r, int[] m) {
     real dydt[m[1]];
@@ -542,9 +543,9 @@ generated quantities{
 }
 "
 
-model.New = stan_model(model_code = code.New)
-save(model.New, file="stan_model_New_mixed.RData")
-remove(model.New)
+model.Gen = stan_model(model_code = code.Gen)
+save(model.Gen, file="stan_model_Gen_mixed.RData")
+remove(model.Gen)
 
 print("New OK")
 

@@ -30,7 +30,7 @@ Yodzis = function(t, N, parms){
   })
 }
 
-New = function(t, N, parms){
+Generalized = function(t, N, parms){
   with(parms,{
     dN = rep(0,m)
     denominator = sum(w[1:m]*N^r) + sum(a[1:m]*w[1:m]*h[1:m]*N^(1+q+r))
