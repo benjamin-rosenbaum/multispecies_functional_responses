@@ -2,7 +2,7 @@
 
 Online material for:
 
-Rosenbaum B, Li J, Hirt MR, Ryser R, Brose U (2023). Understanding interactions in a complex world: Design and analysis of multi-species functional response experiments. <i>bioRxiv preprint.</i> [https://doi.org/10.1101/2023.12.19.571428](https://www.biorxiv.org/content/10.1101/2023.12.19.571428v1) 
+B. Rosenbaum, J. Li, M.R. Hirt, R. Ryser, U. Brose (2023). Understanding interactions in a complex world: Design and analysis of multi-species functional response experiments. <i>bioRxiv preprint.</i> [https://doi.org/10.1101/2023.12.19.571428](https://www.biorxiv.org/content/10.1101/2023.12.19.571428v1) 
 
 ## Tutorial
 
