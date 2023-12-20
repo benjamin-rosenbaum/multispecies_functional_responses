@@ -12,7 +12,7 @@ Standalone R-code 'Tutorial.R' and additional functions available in 'code' fold
 
 ## Empirical datasets
 
-Results of fitting 23 empirical datasets in html files
+Results of fitting 23 empirical datasets in html files. See Supplement Table S1 for an overview.  
 
 - [Colton_1987_1](https://benjamin-rosenbaum.github.io/multispecies_functional_responses/Colton_1.html)
 - [Colton_1987_2](https://benjamin-rosenbaum.github.io/multispecies_functional_responses/Colton_2.html)
