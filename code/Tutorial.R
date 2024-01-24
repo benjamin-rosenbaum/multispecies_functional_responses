@@ -10,14 +10,25 @@ library("coda")          # plotting model output
 library("BayesianTools") # plotting model output
 library("deSolve")       # computing ODE predictions
 
-# compile models
-# source("compilation_loo_mixed.R")
+# set directory 
+setwd("~/Nextcloud/MSFR/Tutorial")
+# setwd("your_directory")
 
-# or load already compiled models
-load("stan_model_H2_mixed.RData")
-load("stan_model_H3_mixed.RData")
-load("stan_model_Yo_mixed.RData")
-load("stan_model_Gen_mixed.RData")
+# compile stan models
+# model.H2 = stan_model("MSFR_H2.stan")
+# save(model.H2, file="stan_model_H2.RData")
+# model.H3 = stan_model("MSFR_H3.stan")
+# save(model.H3, file="stan_model_H3.RData")
+# model.Yo = stan_model("MSFR_Yo.stan")
+# save(model.Yo, file="stan_model_Yo.RData")
+# model.Gen = stan_model("MSFR_Gen.stan")
+# save(model.Gen, file="stan_model_Gen.RData")
+
+# or load previously compiled models
+load("stan_model_H2.RData")
+load("stan_model_H3.RData")
+load("stan_model_Yo.RData")
+load("stan_model_Gen.RData")
 
 ## Data simulation -------------------------------------------------------------
 
@@ -28,7 +39,7 @@ m = 2 # number of species
 n = 128 # number of feeding trials: 64, 128, 256, 512, 1024
 Nmax = 200 # maximum number of offered prey per species
 
-DOE = doe.gridlog # choices:
+DOE = doe.gridlog 
 df.all = DOE(n, Nmax) |> as.data.frame()
 
 colnames(df.all) = c("Prey1", "Prey2", "Prey1.Eaten", "Prey2.Eaten" )
@@ -120,7 +131,7 @@ data.stan = list(n=n,
                  m=m,
                  N_0=df.all[, 1:m], 
                  N_e=df.all[, (m+1):(2*m)],
-                 Replaced = df.all$Replaced,
+                 Replaced = as.integer(df.all$Replaced),
                  Time = df.all$Time
 )
 
