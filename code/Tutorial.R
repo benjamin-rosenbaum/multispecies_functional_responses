@@ -11,18 +11,17 @@ library("BayesianTools") # plotting model output
 library("deSolve")       # computing ODE predictions
 
 # set directory 
-setwd("~/Nextcloud/MSFR/Tutorial")
-# setwd("your_directory")
+setwd("your_directory")
 
 # compile stan models
-# model.H2 = stan_model("MSFR_H2.stan")
-# save(model.H2, file="stan_model_H2.RData")
-# model.H3 = stan_model("MSFR_H3.stan")
-# save(model.H3, file="stan_model_H3.RData")
-# model.Yo = stan_model("MSFR_Yo.stan")
-# save(model.Yo, file="stan_model_Yo.RData")
-# model.Gen = stan_model("MSFR_Gen.stan")
-# save(model.Gen, file="stan_model_Gen.RData")
+model.H2 = stan_model("MSFR_H2.stan")
+save(model.H2, file="stan_model_H2.RData")
+model.H3 = stan_model("MSFR_H3.stan")
+save(model.H3, file="stan_model_H3.RData")
+model.Yo = stan_model("MSFR_Yo.stan")
+save(model.Yo, file="stan_model_Yo.RData")
+model.Gen = stan_model("MSFR_Gen.stan")
+save(model.Gen, file="stan_model_Gen.RData")
 
 # or load previously compiled models
 load("stan_model_H2.RData")
